@@ -25,11 +25,12 @@ def median_id(ne):
     sorted(ne)
     if len(ne)%2==0:
         print("Even")
-        answ=ne[int(len(ne)-len(ne)/2)]+ne[int(len(ne)-len(ne)/2)-1]
+        answ=(ne[len(ne)//2-1]+ne[len(ne)//2])/2
     else:
         answ=ne[int(len(ne)-len(ne)/2)]
         print("Odd")
     print("Median is ", answ)
+    return answ
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python prog")
     display_main_menu()
